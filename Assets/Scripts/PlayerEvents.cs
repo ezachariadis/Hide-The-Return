@@ -3,16 +3,14 @@ using System.Collections;
 
 public class PlayerEvents : MonoBehaviour
 {
-    
-    // Use this for initialization
-    void Start()
-    {
-        Manager.Instance.Interact();
-    }
+    IInteractable interactable;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        Manager.Instance.Interact();
+        interactable = other.GetComponent<IInteractable>();
+        if(interactable != null)
+        {
+            interactable.Interact();
+        }
     }
 }
