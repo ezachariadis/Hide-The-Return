@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redPotion : MonoBehaviour,IInteractable
+public class redPotion : MonoBehaviour, IInteractable
 {
-    public int HealthPoints = 5;
+    Potion Red = new Potion("RedPotion", 000001, new PlayerStats() { Health = 5});
 
     public void Interact()
     {
-        Statmanager.Instance.AddHealth(HealthPoints);
+        EquipmentManager.Instance.AddItem(Red);
         this.gameObject.SetActive(false);
     }
 }
