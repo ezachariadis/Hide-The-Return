@@ -288,6 +288,8 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Documentation\CodeDocumentation.txt" />
+    <None Include="Assets\Documentation\ProductionLog.txt" />
     <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

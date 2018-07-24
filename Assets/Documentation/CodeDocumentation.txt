@@ -1,0 +1,52 @@
+﻿Managers
+------------------------------
+Equipment Manager
+Manages all the player's items. This script is using singleton pattern
+
+AddItem(Item item)
+Adds the item after it check if the list has space. 
+
+UseItem(int index)
+It uses the item in the position index
+
+Stats Manager
+Manages the player stats. This script is using singleton pattern
+
+Playerstats component.
+List of all the Items
+
+GetHealth()
+Returns the health of the player
+
+ChangeStats(Playerstats)
+Changes the stats based on the PlayerStats from the constructor
+
+-------------------------------
+
+Classes
+Item
+Describes and declares all the variables for the object Item
+
+Potion:Item
+Inheritances all the item specifications. Also the Potion has a PlayerStats Component
+
+PlayerStats
+All the basic stats of the player or items that can change
+
+-------------------------------
+
+Controllers
+
+PlayerEvents
+Check with the TriggerEnter if the other object is a Interactable Object. Using the interface IInteractable and the interaction method.
+
+RedPotion
+Creates and sets the stats for a red Potion. Using IInteractable interface
+
+PurplePotion
+Creates and sets the stats for a purple Potion. Using IInteractable interface
+
+-------------------------------
+TO DO
+Artificial Interlligence Controller + Logic
+

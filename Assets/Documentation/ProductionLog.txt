@@ -1,0 +1,25 @@
+Commit 1.0
+Duration: 2 Hours
+Basic Framework
+Implementation
+Level Design and Asset Import
+
+----------------------------------------------------------
+
+Commit 1.2
+Duration 3 Hours
+Class Scripts:
+Basic AI
+Generic virtual/override showcase
+Generic OOP
+Basic Interaction with Objects/ Implementation via interfaces
+
+---------------------------------------------------------
+
+Commit 1.3
+Duration 1 Hour
+Upgrades to AI pathfinding System and Logic for the Distance Checking
+OOP Design for the Collectables
+Basic Architecture for the Project
+Documentation
+----------------------------------------------------------
