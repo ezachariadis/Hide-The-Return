@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour {
 
+	public int viewangle = 90;
+	List<GameObject> OnSightObjects = new List<GameObject>();
 	public enum EnemyStates { Idle, Chase};
     EnemyStates states;
     NavMeshAgent navMeshAgent;
@@ -24,8 +26,6 @@ public class EnemyAI : MonoBehaviour {
 
     void Update()
     {
-
-
         other = Physics.OverlapSphere(this.transform.position, 1.5f);
 
         //viewangle = 120
@@ -33,16 +33,34 @@ public class EnemyAI : MonoBehaviour {
         //check if the angle of the z axis and the target vector is lower than the viewangle /2
         //add the object to the list
 
-        foreach(Collider c in other)
-        {
-            if(c.gameObject.tag == "Player")
-            {
-                states=EnemyStates.Chase;
-            }else
-            {
-                states = EnemyStates.Idle;
-            }
-        }
+		OnSightObjects.Clear();
+
+		for (int i = 0; i < other.Length; i++) {
+
+			Transform tmp = other[i].transform;
+			Vector3 DistToAi = tmp.position - transform.position;
+			if (Vector3.Angle(DistToAi, transform.forward) < viewangle / 2) {
+				if (other[i].gameObject.tag == "Player") {
+					//Raycast to target
+					Debug.Log("Chasing Player");
+					OnSightObjects.Add(other[i].gameObject);
+					states = EnemyStates.Chase;
+				} else {
+					states = EnemyStates.Idle;
+				}
+			}
+		}
+
+//        foreach(Collider c in other)
+//        {
+//            if(c.gameObject.tag == "Player")
+//            {
+//                states=EnemyStates.Chase;
+//            }else
+//            {
+//                states = EnemyStates.Idle;
+//            }
+//        }
         //When to change to Idle
         //When to change to Chase
         //if (Vector3.Distance(navMeshAgent.transform.position, FollowTarget.transform.position) < 3)

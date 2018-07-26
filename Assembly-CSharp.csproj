@@ -99,6 +99,7 @@
      <Compile Include="Assets\Scripts\Audio.cs" />
      <Compile Include="Assets\Scripts\bluePotion.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\Equipment Manager.cs" />
      <Compile Include="Assets\Scripts\ExtendingMono.cs" />
      <Compile Include="Assets\Scripts\George.cs" />
      <Compile Include="Assets\Scripts\HealthText.cs" />
@@ -107,6 +108,7 @@
      <Compile Include="Assets\Scripts\ICollectable.cs" />
      <Compile Include="Assets\Scripts\IInteractable.cs" />
      <Compile Include="Assets\Scripts\IManager.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\John.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\PlayerEvents.cs" />
@@ -130,6 +132,7 @@
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\StaffOfPain\readme_first.txt" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\Documentation\ProductionLog.txt" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -151,6 +154,7 @@
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\Documentation\CodeDocumentation.txt" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
      <None Include="Assets\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
