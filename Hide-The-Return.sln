@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hide-The-Return", "Hide-The-Return.csproj", "{43A621E3-B9EA-0744-1529-ABE41D050903}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hide-The-Return.Plugins", "Hide-The-Return.Plugins.csproj", "{DA857841-5321-235F-47CE-B7982C078CA8}"

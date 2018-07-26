@@ -28,6 +28,11 @@ public class EnemyAI : MonoBehaviour {
 
         other = Physics.OverlapSphere(this.transform.position, 1.5f);
 
+        //viewangle = 120
+        //find target vector target.position - transform.position
+        //check if the angle of the z axis and the target vector is lower than the viewangle /2
+        //add the object to the list
+
         foreach(Collider c in other)
         {
             if(c.gameObject.tag == "Player")
